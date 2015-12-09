@@ -13,7 +13,7 @@ public class PaindromeTests {
 
 	@Before
 	public void setUp() throws Exception {
-		detector = new BogusPalindromeDetector();
+		detector = new ScottPalindromeDetector();
 	}
 
 	@Test
@@ -24,6 +24,11 @@ public class PaindromeTests {
 	@Test
 	public void testPanama() {
 		assertTrue(detector.isPalindrome("a man a plan a canal panama"));
+	}
+
+	@Test
+	public void testMadam() {
+		assertTrue(detector.isPalindrome("Madam, I'm Adam."));
 	}
 
 	@Test
@@ -57,6 +62,11 @@ public class PaindromeTests {
 	@Test
 	public void testEmpty() {
 		assertFalse(detector.isPalindrome(""));
+	}
+
+	@Test
+	public void testShort() {
+		assertTrue(detector.isPalindrome("A"));
 	}
 
 }
