@@ -1,4 +1,5 @@
-
+package dad.stuff.dontlookhere;
+import palindromes.IPalindromeDetector;
 public class ScottPalindromeDetector implements IPalindromeDetector {
 
 	public ScottPalindromeDetector() {

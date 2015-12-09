@@ -1,3 +1,4 @@
+package palindromes;
 
 public class BogusPalindromeDetector implements IPalindromeDetector {
 

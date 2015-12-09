@@ -1,7 +1,11 @@
-import static org.junit.Assert.*;
+package palindromes;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import dad.stuff.dontlookhere.ScottPalindromeDetector;
 
 public class PaindromeTests {
 	
@@ -9,7 +13,7 @@ public class PaindromeTests {
 
 	@Before
 	public void setUp() throws Exception {
-		detector = new ScottPalindromeDetector();
+		detector = new BogusPalindromeDetector();
 	}
 
 	@Test
